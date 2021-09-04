@@ -92,6 +92,9 @@ class JsonLogic
             '%' => function ($a, $b) {
                 return $a % $b;
             },
+            'fmod' => function ($a, $b) {
+                return fmod($a, $b);
+            },
             '!!' => function ($a) {
                 return static::truthy($a);
             },
